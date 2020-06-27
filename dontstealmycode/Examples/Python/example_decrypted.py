@@ -6,3 +6,5 @@ class TestClass():
     def say_hello(self):
         guy = input("[INPUT] What is your name ? \n")
         print(f"Hello { guy }")
+
+

@@ -8,3 +8,33 @@ Let's go on the backend !
 
 [INFO] Backend done ! Second commit !
 [INFO] Taking test in Examples folder
+
+## I. [COMMANDS] Tests run
+### 1. dsmc as a python file
+##### a. Encrypting and decrypting the Haskell example
+Encrypting
+```shell script
+python dsmc.py -e 1 -c "Examples/Haskell/example.hs" --f1 "factor1" --f2 "factor2" -o "Examples/Haskell/example_encrypted.hs"
+```
+Decrypting
+```shell script
+python dsmc.py -d 1 -c "Examples/Haskell/example_encrypted.hs" --f1 "factor1" --f2 "factor2" -o "Examples/Haskell/example_decrypted.hs"
+```
+##### b. Encrypting and decrypting general model
+Encrypting
+```shell script
+python dsmc.py -e 1 -c "path/to/the/file/to/encrypt" --f1 "<password-first-factor>" --f2 "<password-second-factor>" -o "path/then/name/to/the/output/encrypted/file"
+```
+Decrypting
+```shell script
+python dsmc.py -d 1 -c "path/then/name/to/the/output/encrypted/file/to/decrypt" --f1 "<password-first-factor>" --f2 "<password-second-factor>" -o "path/then/name/to/the/output/decrypted/file"
+```
+
+##### c. For further details on the command line use of dsmc.py, please type
+```shell script
+python dsmc.py --help
+```
+or 
+```shell script
+python dsmc.py -h
+```
