@@ -7,3 +7,4 @@ I go on the base of a pseudo "two factors authentification" which will encrypt e
 Let's go on the backend !
 
 [INFO] Backend done ! Second commit !
+[INFO] Taking test in Examples folder
