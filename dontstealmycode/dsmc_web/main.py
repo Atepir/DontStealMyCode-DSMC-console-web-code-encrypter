@@ -4,7 +4,7 @@ from os import system
 
 app = Flask(__name__)
 app.secret_key = b"macrohacks"
-UPLOAD_DIRECTORY = "dsmc_web/uploads/"
+UPLOAD_DIRECTORY = "dontstealmycode/dsmc_web/uploads/"
 UPLOAD_SHORT_DIR = "uploads/"
 
 @app.route('/')
