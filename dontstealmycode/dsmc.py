@@ -3,7 +3,10 @@
 from os import system
 import argparse
 
-parser = argparse.ArgumentParser(description="[DontStealMyCode (DSMC) - console & web code encrypter & decrypter]\nEncrypts and Decrypts code via the command line interface or on the Heroku server\nCan also be used as a module in python to perform some encryption-decryption tasks\nDeveloped in one day by Nongma SORGHO in the MacroHacks Hackathon!")
+parser = argparse.ArgumentParser(description="[DontStealMyCode (DSMC) - console & web code encrypter & decrypter]"
+                                             "Encrypts and Decrypts code via the command line interface or on the Heroku server."
+                                             "Can also be used as a module in python to perform some encryption-decryption tasks."
+                                             "Developed in one day by Nongma SORGHO in the MacroHacks Hackathon!")
 
 parser.add_argument("-e", metavar="e", help="[HELP] Use this option to encrypt a code, set its value to 1 to do that", default=0)
 parser.add_argument("-d", metavar="d", help="[HELP] Use this option to decrypt an encrypted code, set its value to  to do that", default=0)

@@ -38,3 +38,5 @@ or
 ```shell script
 python dsmc.py -h
 ```
+### 1. dsmc as a python module
+Please, see the example of use of dsmc as python module in the Examples/ folder

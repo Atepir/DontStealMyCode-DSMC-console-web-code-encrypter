@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/dontstealmycode/Examples/Python/example_encrypted.py" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (DontStealMyCode (DSMC) console &amp; web code encrypter)" project-jdk-type="Python SDK" />
+  <component name="PyCharmProfessionalAdvertiser">
+    <option name="shown" value="true" />
+  </component>
 </project>
