@@ -51,7 +51,7 @@ h1{
     top: 0;
 }
 
-.info-banner a, .info-banner2 a{
+.info-banner a, .info-banner2 li{
     float: right;
     color: #009a9c;
     text-align: center;
