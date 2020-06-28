@@ -1,13 +1,14 @@
 Metadata-Version: 2.1
 Name: dsmc-web
-Version: 0.0.1
+Version: 0.0.3
 Summary: [Dont Steal My Code : Console & web code encrypter & decrypter]
 Home-page: https://github.com/atepir/DontStealMyCode-DSMC-console-web-code-encrypter/tree/master/dontstealmycode-web
 Author: Nongma SORGHO
 Author-email: sorghocharles8@gmail.com
 License: UNKNOWN
-Description: # DontStealMyCodeWeb
-        First Module Commit
+Description: # dsmc-web
+        
+        dsmc (DontStealMyCode-Web) is a python-based complete "framework" to encrypt and decrypt code or whatever file you want. Please the global repository for further details on how to use this on your websites.
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License

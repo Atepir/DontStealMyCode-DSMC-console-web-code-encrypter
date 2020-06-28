@@ -5,6 +5,7 @@
 """
 
 from dontstealmycode.dsmc.__init__ import Code
+# or from dsmc import Code
 import os
 
 code_file = str(input("[INPUT] Path to the code file to encrypt : "))
