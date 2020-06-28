@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {{ dropzone.load_css() }}
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/dropzone.css">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -48,14 +49,12 @@
         </span>
     </div>
     <form action="/uploader" method="POST"
-          enctype="multipart/form-data" class="dropzone">
-        <div class="fallback">
-            <input name="file" type="file"/>
-        </div>
+          enctype="multipart/form-data">
+        {{ dropzone.create(action='/uploader') }}
+        {{ dropzone.config() }}
         <input type="text" name="f1" id="f1" value="" placeholder="1st factor" />
         <input type="text" name="f2" id="f2" value="" placeholder="2nd factor" />
-        <input type="submit" value="Decrypt" name="decrypt" id="decrypt">
-        <input type="submit" value="Encrypt" name="encrypt" id="encrypt">
+        <input type="submit" value="submit" name="submit" id="decrypt">
     </form>
     <nav class="info-banner">
         <ul>
@@ -76,5 +75,6 @@
             });
         };
     </script>
+    {{ dropzone.load_js() }}
 </body>
 </html>

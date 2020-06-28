@@ -14,6 +14,7 @@ h1{
     color: #009a9c;
     font-family: 'Paytone One', sans-serif;
     font-size: 250%;
+    text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 0 1px 3px;
 }
     h1 .red{
         color: red!important;

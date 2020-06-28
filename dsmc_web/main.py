@@ -1,8 +1,10 @@
-from flask import Flask, render_template, request, send_file, session
+# coding: utf-8
+from flask import Flask, render_template, request, send_file
 from werkzeug.utils import secure_filename
-from os import system
+from flask_dropzone import Dropzone
 
 app = Flask(__name__)
+dropzone = Dropzone(app)
 app.secret_key = b"macrohacks"
 UPLOAD_DIRECTORY = "dsmc_web/uploads/"
 UPLOAD_SHORT_DIR = "uploads/"
@@ -19,9 +21,12 @@ def uploads_file():
         name = f.filename
         global secured_name
         secured_name = secure_filename(name)
-        final_name = UPLOAD_DIRECTORY + secured_name
+        file_final_name = UPLOAD_DIRECTORY + name
+        final_name = file_final_name
         f.save(final_name)
-        return '<a href="/get_file">Télécharger le fichier</a>'
+        return '<a href="/get_file">Telecharger le fichier</a>'
+    else:
+        return render_template('index.html')
 
 @app.route('/get_file')
 def get_fil():
