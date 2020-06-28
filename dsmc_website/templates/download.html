@@ -48,22 +48,19 @@
     <a id="download" href="/get_file">Download</a>
     <div id="loader"></div>
     <script>
-        function sleepFor( sleepDuration ){
-            const now = new Date().getTime();
-            if (new Date().getTime() > now + sleepDuration){
-                document.getElementById('loader').style.display = 'none';
-                document.getElementById('download').style.display = 'block';
-                window.location.reload();
-            }
-        }
         window.onload = function() {
             if(!window.location.hash) {
                 window.location = window.location + '#loaded';
                 document.getElementById('loader').style.display = 'block';
                 document.getElementById('download').style.display = 'none';
-                sleepFor(3);
             }
         }
+        function allow_download(){
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('download').style.display = 'block';
+            window.location.reload();
+        }
+        window.setTimeout(allow_download, 3000);
     </script>
     <a id="another" href="/">Another ?</a>
     <nav class="info-banner">
