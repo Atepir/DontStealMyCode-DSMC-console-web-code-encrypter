@@ -45,9 +45,14 @@
             For more info, feel free to see the <a style="font-size: 100%" href="https://github.com/atepir">open source github repository</a>.
         </span>
     </div>
-    <button id="download" onClick="window.location.reload();">Download</button>
+    <a id="download" href="/get_file">">Download</a>
     <script>
-        document.onload() = window.location.reload();
+        window.onload = function() {
+            if(!window.location.hash) {
+                window.location = window.location + '#loaded';
+                window.location.reload();
+            }
+        }
     </script>
     <a id="another" href="/">Another ?</a>
     <nav class="info-banner">
