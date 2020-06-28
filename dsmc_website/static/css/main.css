@@ -57,10 +57,14 @@ h1{
     float: right;
     color: #009a9c;
     text-align: center;
-    padding: 5px 16px;
     text-decoration: none;
 }
-
+.info-banner a{
+    padding: 5px 16px;
+}
+.info-banner2 li{
+    padding: 0 10px;
+}
 #copyright{
     float: left;
 }
