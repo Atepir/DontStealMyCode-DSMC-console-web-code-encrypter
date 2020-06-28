@@ -306,4 +306,7 @@ img{
         color: white;
         font-size: 200%;
     }
+    #built-in{
+        display: none;
+    }
 }
