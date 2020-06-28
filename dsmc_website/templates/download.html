@@ -49,11 +49,9 @@
     <div id="loader"></div>
     <script>
         window.onload = function() {
-            if(!window.location.hash) {
-                window.location = window.location + '#loaded';
-                document.getElementById('loader').style.display = 'block';
-                document.getElementById('download').style.display = 'none';
-            }
+            window.location = window.location + '#loaded';
+            document.getElementById('loader').style.display = 'block';
+            document.getElementById('download').style.display = 'none';
         }
         function allow_download(){
             if(!window.location.hash) {
