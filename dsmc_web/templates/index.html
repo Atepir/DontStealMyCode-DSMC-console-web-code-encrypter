@@ -47,9 +47,8 @@
     </div>
     <form action="/uploader" method="POST"
           enctype="multipart/form-data" class="dropzone">
-        <input type="file" id="file-upload" required />
-        <label for="file-upload"><span style="color: white;">Upload file</span></label>
-        <div id="file-upload-filename"></div>
+        <input type="file" name="file" id="file-upload" required />
+        <label id="file-input-label" for="file-upload">Your file goes there</label>
         <input type="text" name="f1" id="f1" value="" placeholder="1st factor" />
         <input type="text" name="f2" id="f2" value="" placeholder="2nd factor" />
         <input type="submit" value="submit" name="submit" id="decrypt" />
@@ -63,23 +62,5 @@
             <li><a id="copyright" style="font-size: 30%" href="#"><i class="far fa-copyright"></i>Sorgho Nongma</a></li>
         </ul>
     </nav>
-    <script>
-        var input = document.getElementById( 'file-upload' );
-        var infoArea = document.getElementById( 'file-upload-filename' );
-
-        input.addEventListener( 'change', showFileName );
-
-        function showFileName( event ) {
-
-          // the change event gives us the input it occurred in
-          var input = event.srcElement;
-
-          // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
-          var fileName = input.files[0].name;
-
-          // use fileName however fits your app best, i.e. add it into a div
-          infoArea.textContent = 'File name: ' + fileName;
-        }
-    </script>
 </body>
 </html>
