@@ -49,11 +49,11 @@
     <div id="loader"></div>
     <script>
         function sleepFor( sleepDuration ){
-            var now = new Date().getTime();
+            const now = new Date().getTime();
             if (new Date().getTime() > now + sleepDuration){
-            document.getElementById('loader').style.display = 'none';
-            document.getElementById('download').style.display = 'block';
-            window.location.reload();
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('download').style.display = 'block';
+                window.location.reload();
             }
         }
         window.onload = function() {
