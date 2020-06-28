@@ -70,6 +70,9 @@ h1{
     padding: 2px 16px;
     color: black;
 }
+.info-banner2 a{
+    color: black;
+}
 #copyright{
     float: left;
 }
@@ -127,8 +130,8 @@ input:focus + label {
     color: #009a9c;
     position: absolute;
     top: 50%;
-    left: 55%;
-    transform: translate(-45%, -50%);
+    left: 60%;
+    transform: translate(-40%, -50%);
     font-size: 120%;
 }
 #file-input-label:hover{
@@ -224,8 +227,8 @@ input:focus + label {
 }
 
 #loader {
-    border: 16px solid white;
-    border-top: 16px solid ehite;
+    border: 16px solid #009a9c;
+    border-top: 16px solid white;
     border-radius: 50%;
     color: white;
     width: 120px;
