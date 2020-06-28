@@ -132,8 +132,8 @@ input:focus + label {
     color: #009a9c;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 55%;
+    transform: translate(-45%, -50%);
     font-size: 120%;
 }
 #file-input-label:hover{
