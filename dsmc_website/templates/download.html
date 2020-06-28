@@ -56,9 +56,12 @@
             }
         }
         function allow_download(){
-            document.getElementById('loader').style.display = 'none';
-            document.getElementById('download').style.display = 'block';
-            window.location.reload();
+            if(!window.location.hash) {
+                window.location = window.location + '#loaded';
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('download').style.display = 'block';
+                window.location.reload();
+            }
         }
         window.setTimeout(allow_download, 5000);
     </script>
