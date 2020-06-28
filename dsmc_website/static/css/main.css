@@ -248,7 +248,7 @@ input:focus + label {
 }
 
 img{
-    max-width: 24px;
+    max-width: 22px;
 }
 
 @media screen and (max-width: 1128px) {
