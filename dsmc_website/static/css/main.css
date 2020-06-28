@@ -60,14 +60,14 @@ h1{
 }
 .info-banner a{
     color: #009a9c;
-    padding: 5px 16px;
+    padding: 5px 12px;
 }
 .info-banner2 ul{
     margin: 8px 0 0 0;
     list-style: none;
 }
 .info-banner2 li{
-    padding: 2px 16px;
+    padding: 2px 12px;
     color: black;
 }
 .info-banner2 a{
@@ -248,7 +248,7 @@ input:focus + label {
 }
 
 img{
-    max-width: 22px;
+    max-width: 24px;
 }
 
 @media screen and (max-width: 1128px) {
