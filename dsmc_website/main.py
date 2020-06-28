@@ -1,11 +1,12 @@
 # coding: utf-8
+
 from flask import Flask, render_template, request, send_file
 from werkzeug.utils import secure_filename
-from dsmc import Code
+from dsmc_web import Code
 
 app = Flask(__name__)
 app.secret_key = b"macrohacks"
-UPLOAD_DIRECTORY = "dsmc_web/uploads/"
+UPLOAD_DIRECTORY = "dsmc_website/uploads/"
 UPLOAD_SHORT_DIR = "uploads/"
 
 @app.route('/')

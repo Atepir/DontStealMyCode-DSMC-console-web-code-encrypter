@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dsmc-web
+Version: 0.0.1
+Summary: [Dont Steal My Code : Console & web code encrypter & decrypter]
+Home-page: https://github.com/atepir/DontStealMyCode-DSMC-console-web-code-encrypter/tree/master/dontstealmycode-web
+Author: Nongma SORGHO
+Author-email: sorghocharles8@gmail.com
+License: UNKNOWN
+Description: # DontStealMyCodeWeb
+        First Module Commit
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

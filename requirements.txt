@@ -1,4 +1,4 @@
 Flask~=1.1.2
 argparse
 gunicorn
-dsmc~=0.0.1
+dsmc-web~=0.0.1
