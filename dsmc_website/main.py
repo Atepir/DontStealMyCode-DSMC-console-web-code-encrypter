@@ -1,6 +1,6 @@
 # coding: utf-8
 
-from flask import Flask, render_template, request, send_file
+from flask import Flask, render_template, request, send_file, redirect
 from werkzeug.utils import secure_filename
 from dsmc_web import Code
 
@@ -29,8 +29,10 @@ def uploads_file():
         decryption = request.form.get('decrypt')
         global todo
         if encryption != "":
+            global todo
             todo = 0
         else:
+            global todo
             todo = 1
         global f1
         f1 = request.form.get('f1')
@@ -41,7 +43,7 @@ def uploads_file():
         secured_name = secure_filename(name)
         final_name = UPLOAD_DIRECTORY + secured_name
         f.save(final_name)
-        return render_template('download.html')
+        return redirect('download.html')
     else:
         return render_template('index.html')
 
