@@ -48,8 +48,7 @@
     <a id="download" href="/get_file">Download</a>
     <div id="loader"></div>
     <script>
-        window.onload = function() {
-            window.location = window.location + '#loaded';
+        function init() {
             document.getElementById('loader').style.display = 'block';
             document.getElementById('download').style.display = 'none';
         }
@@ -61,6 +60,7 @@
                 window.location.reload();
             }
         }
+        window.setTimeout(init, 0);
         window.setTimeout(allow_download, 5000);
     </script>
     <a id="another" href="/">Another ?</a>
