@@ -57,8 +57,8 @@ def get_fil():
     decrypted_name = "decrypted_" + secured_name
     global todo
     if todo == 1:
-        codeObject.encrypt(output=UPLOAD_SHORT_DIR + encrypted_name)
+        codeObject.encrypt(output=UPLOAD_DIRECTORY + encrypted_name)
         return send_file(UPLOAD_SHORT_DIR + encrypted_name, as_attachment=True, attachment_filename=encrypted_name)
     else:
-        codeObject.decrypt(output=UPLOAD_SHORT_DIR + decrypted_name)
+        codeObject.decrypt(output=UPLOAD_DIRECTORY + decrypted_name)
         return send_file(UPLOAD_SHORT_DIR + decrypted_name, as_attachment=True, attachment_filename=decrypted_name)
