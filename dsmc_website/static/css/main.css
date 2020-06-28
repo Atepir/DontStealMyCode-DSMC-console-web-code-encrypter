@@ -224,6 +224,10 @@ input:focus + label {
   100% { transform: rotate(360deg); }
 }
 
+img{
+    max-width: 24px;
+}
+
 @media screen and (max-width: 1128px) {
     .dropzone{
         width: 50%;
