@@ -50,7 +50,11 @@
     <script>
         function sleepFor( sleepDuration ){
             var now = new Date().getTime();
-            while(new Date().getTime() < now + sleepDuration){ /* do nothing */ }
+            if (new Date().getTime() > now + sleepDuration){
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('download').style.display = 'block';
+            window.location.reload();
+            }
         }
         window.onload = function() {
             if(!window.location.hash) {
@@ -58,9 +62,6 @@
                 document.getElementById('loader').style.display = 'block';
                 document.getElementById('download').style.display = 'none';
                 sleepFor(3);
-                document.getElementById('loader').style.display = 'none';
-                document.getElementById('download').style.display = 'block';
-                window.location.reload();
             }
         }
     </script>
