@@ -49,7 +49,7 @@ def uploads_file():
 @app.route('/get_file')
 def get_fil():
     global secured_name
-    received = UPLOAD_SHORT_DIR + secured_name
+    received = UPLOAD_DIRECTORY + secured_name
     global f1
     global f2
     codeObject = Code(received, f1, f2)
