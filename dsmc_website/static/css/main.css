@@ -62,9 +62,12 @@ h1{
 .info-banner a{
     padding: 5px 16px;
 }
+.info-banner2 ul{
+    margin: 8px 0 0 0;
+    list-style: none;
+}
 .info-banner2 li{
-    padding: 0;
-    margin: 0;
+    padding: 2px 16px;
 }
 #copyright{
     float: left;
