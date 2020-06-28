@@ -1,15 +1,16 @@
-# Initial commit
+# dsmc python module
 
-I will try to perform a python-based console & web service which allow to encrypt and decrypt code to avoid code stealing of all kinds.
+dsmc (DontStealMyCode) is a python-based complete "framework" to encrypt and decrypt code or whatever file you want. Please the global repository for further details.  
 
-I go on the base of a pseudo "two factors authentification" which will encrypt each character of the uploaded code in another character with an apparent randomly generated password but really chosen by the user.
+## Installation
 
-Let's go on the backend !
+`pip install dsmc`
 
-[INFO] Backend done ! Second commit !
-[INFO] Taking test in Examples folder
+or
 
-## I. [COMMANDS] Tests run
+clone the repository via git `git clone https://github.com/Atepir/DontStealMyCode-DSMC-console-web-code-encrypter/dontstealmycode`
+
+## I. Tests run
 ### 1. dsmc as a python file
 ##### a. Encrypting and decrypting the Haskell example
 Encrypting
@@ -38,5 +39,10 @@ or
 ```shell script
 python dsmc.py -h
 ```
-### 1. dsmc as a python module
-Please, see the example of use of dsmc as python module in the Examples/ folder
+### 2. dsmc as a python module
+Please, see the example of use of dsmc as python module in the tests/ folder
+
+<hr>
+@author: Nongma Sorgho
+
+@date: 06.28.2020
