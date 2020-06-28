@@ -38,7 +38,7 @@ def uploads_file():
         secured_name = secure_filename(name)
         final_name = UPLOAD_DIRECTORY + secured_name
         f.save(final_name)
-        return redirect(render_template('download.html'))
+        return render_template('download.html')
     else:
         return render_template('index.html')
 
