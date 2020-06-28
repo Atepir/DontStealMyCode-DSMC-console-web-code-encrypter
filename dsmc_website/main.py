@@ -47,8 +47,7 @@ def uploads_file():
 def get_fil():
     global secured_name
     received = UPLOAD_DIRECTORY + secured_name
-    global f1
-    global f2
+    global f1, f2
     codeObject = Code(received, f1, f2)
     encrypted_name = "encrypted_" + secured_name
     decrypted_name = "decrypted_" + secured_name

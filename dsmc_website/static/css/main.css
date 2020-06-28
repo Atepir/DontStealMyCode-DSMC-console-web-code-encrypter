@@ -169,6 +169,9 @@ input:focus + label {
     border-left-color: #009a9c;
     transition: border-left 0.3s, border-left-color 0.3s;
 }
+#download-info{
+
+}
 
 #download{
     top: 30%;
