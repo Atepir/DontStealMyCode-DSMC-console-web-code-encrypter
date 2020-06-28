@@ -82,14 +82,17 @@
     </div>
     <a id="download" href="/get_file">Download</a>
     <div id="loader"></div>
+    <a id="another" href="/">Another ?</a>
     <script>
         function init() {
             if(window.location.hash) {
                 document.getElementById('loader').style.display = 'none';
                 document.getElementById('download').style.display = 'block';
+                document.getElementById('another').style.display = 'block';
             }else{
                 document.getElementById('loader').style.display = 'block';
                 document.getElementById('download').style.display = 'none';
+                document.getElementById('another').style.display = 'none';
             }
         }
         function allow_download(){
@@ -97,13 +100,14 @@
                 window.location = window.location + '#loaded';
                 document.getElementById('loader').style.display = 'none';
                 document.getElementById('download').style.display = 'block';
+                document.getElementById('another').style.display = 'block';
                 window.location.reload();
             }
         }
         window.setTimeout(init, 0);
         window.setTimeout(allow_download, 15000);
     </script>
-    <a id="another" href="/">Another ?</a>
+
     <nav class="info-banner">
         <ul>
             <li><a href="#"><i class="fab fa-discord"></i></a>
