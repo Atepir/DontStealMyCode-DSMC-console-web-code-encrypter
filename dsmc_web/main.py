@@ -1,10 +1,8 @@
 # coding: utf-8
 from flask import Flask, render_template, request, send_file
 from werkzeug.utils import secure_filename
-from flask_dropzone import Dropzone
 
 app = Flask(__name__)
-dropzone = Dropzone(app)
 app.secret_key = b"macrohacks"
 UPLOAD_DIRECTORY = "dsmc_web/uploads/"
 UPLOAD_SHORT_DIR = "uploads/"
