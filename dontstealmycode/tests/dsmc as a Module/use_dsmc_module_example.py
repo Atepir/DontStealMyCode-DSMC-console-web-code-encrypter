@@ -4,7 +4,7 @@
     In this way, you have only encrypted codes you can decrypt when you want to use them via another program we can write ...
 """
 
-from dontstealmycode.dsmc import Code
+from dontstealmycode.dsmc.__init__ import Code
 import os
 
 code_file = str(input("[INPUT] Path to the code file to encrypt : "))

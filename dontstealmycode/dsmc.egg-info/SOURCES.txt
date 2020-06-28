@@ -1,0 +1,7 @@
+README.md
+setup.py
+dsmc/__init__.py
+dsmc.egg-info/PKG-INFO
+dsmc.egg-info/SOURCES.txt
+dsmc.egg-info/dependency_links.txt
+dsmc.egg-info/top_level.txt

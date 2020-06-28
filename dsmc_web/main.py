@@ -1,7 +1,7 @@
 # coding: utf-8
 from flask import Flask, render_template, request, send_file
 from werkzeug.utils import secure_filename
-from dontstealmycode.dsmc import Code
+from dsmc import Code
 
 app = Flask(__name__)
 app.secret_key = b"macrohacks"
