@@ -76,6 +76,10 @@
             <img src="{{ url_for('static', filename='bash.png') }}">
         </span>
         <br>
+        <br>
+        <span style="font-size: 2em; color: white">
+            <i class="fab fa-font-awesome-alt"></i>
+        </span>
     </div>
     <form action="/uploader" method="POST"
           enctype="multipart/form-data" class="dropzone">
@@ -104,6 +108,7 @@
             <li><img src="{{ url_for('static', filename='flask.png') }}">
             <li><img src="{{ url_for('static', filename='heroku.png') }}">
             <li><img src="{{ url_for('static', filename='bash.png') }}"></li>
+            <li><a href="#"><i class="fab fa-font-awesome-alt"></i></a></li>
             <li id="built-in"><a href="#">Built in</a></li>
         </ul>
     </nav>
