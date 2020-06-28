@@ -9,9 +9,16 @@ app.secret_key = b"macrohacks"
 UPLOAD_DIRECTORY = "dsmc_website/uploads/"
 UPLOAD_SHORT_DIR = "uploads/"
 
+
 @app.route('/')
 def upload_file():
     return render_template('index.html')
+
+
+global todo
+global f1
+global f2
+global secured_name
 
 
 @app.route('/uploader', methods=['GET', 'POST'])
@@ -38,6 +45,7 @@ def uploads_file():
     else:
         return render_template('index.html')
 
+
 @app.route('/get_file')
 def get_fil():
     global secured_name
@@ -53,4 +61,3 @@ def get_fil():
     else:
         codeObject.decrypt(output=UPLOAD_SHORT_DIR + decrypted_name)
         return send_file(UPLOAD_SHORT_DIR + decrypted_name, as_attachment=True, attachment_filename=decrypted_name)
-
