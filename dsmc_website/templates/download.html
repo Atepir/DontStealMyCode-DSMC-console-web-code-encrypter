@@ -45,11 +45,21 @@
             For more info, feel free to see the <a style="font-size: 100%" href="https://github.com/atepir">open source github repository</a>.
         </span>
     </div>
-    <a id="download" href="/get_file">">Download</a>
+    <a id="download" href="/get_file">Download</a>
+    <div id="loader"></div>
     <script>
+        function sleepFor( sleepDuration ){
+            var now = new Date().getTime();
+            while(new Date().getTime() < now + sleepDuration){ /* do nothing */ }
+        }
         window.onload = function() {
             if(!window.location.hash) {
                 window.location = window.location + '#loaded';
+                document.getElementById('loader').style.display = 'block';
+                document.getElementById('download').style.display = 'none';
+                sleepFor(3);
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('download').style.display = 'block';
                 window.location.reload();
             }
         }
