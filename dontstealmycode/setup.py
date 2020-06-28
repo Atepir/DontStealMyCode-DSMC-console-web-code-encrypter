@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dsmc", # Replace with your own username
-    version="0.0.2",
+    version="0.0.3",
     author="Nongma SORGHO",
     author_email="sorghocharles8@gmail.com",
     description="[Dont Steal My Code : Console & web code encrypter & decrypter]",

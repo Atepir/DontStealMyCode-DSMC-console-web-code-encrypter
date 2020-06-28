@@ -15,11 +15,11 @@ clone the repository via git `git clone https://github.com/Atepir/DontStealMyCod
 ##### a. Encrypting and decrypting the Haskell example
 Encrypting
 ```shell script
-python __init__.py -e 1 -c "tests/Haskell/example.hs" --f1 "factor1" --f2 "factor2" -o "../tests/Haskell/example_encrypted.hs"
+python __init__.py -e 1 -c "../tests/Haskell/example.hs" --f1 "factor1" --f2 "factor2" -o "../tests/Haskell/example_encrypted.hs"
 ```
 Decrypting
 ```shell script
-python __init__.py -d 1 -c "tests/Haskell/example_encrypted.hs" --f1 "factor1" --f2 "factor2" -o "../tests/Haskell/example_decrypted.hs"
+python __init__.py -d 1 -c "../tests/Haskell/example_encrypted.hs" --f1 "factor1" --f2 "factor2" -o "../tests/Haskell/example_decrypted.hs"
 ```
 ##### b. Encrypting and decrypting general model
 Encrypting
