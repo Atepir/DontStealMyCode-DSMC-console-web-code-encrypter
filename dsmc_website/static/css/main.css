@@ -55,11 +55,11 @@ h1{
 
 .info-banner a, .info-banner2 li{
     float: right;
-    color: #009a9c;
     text-align: center;
     text-decoration: none;
 }
 .info-banner a{
+    color: #009a9c;
     padding: 5px 16px;
 }
 .info-banner2 ul{
@@ -68,6 +68,7 @@ h1{
 }
 .info-banner2 li{
     padding: 2px 16px;
+    color: black;
 }
 #copyright{
     float: left;
@@ -223,15 +224,16 @@ input:focus + label {
 }
 
 #loader {
-    border: 16px solid #009a9c;
-    border-top: 16px solid #3498db;
+    border: 16px solid white;
+    border-top: 16px solid ehite;
     border-radius: 50%;
+    color: white;
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
-    left: 48%;
+    left: 45%;
     top: 50%;
-    transform: translate(-52%, -50%);
+    transform: translate(-55%, -50%);
     position: absolute;
 }
 
