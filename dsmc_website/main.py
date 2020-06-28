@@ -15,10 +15,10 @@ def upload_file():
     return render_template('index.html')
 
 
-global todo
-global f1
-global f2
-global secured_name
+todo = 1
+f1 = 1
+f2 = 1
+secured_name = "default"
 
 
 @app.route('/uploader', methods=['GET', 'POST'])
@@ -27,10 +27,11 @@ def uploads_file():
         f = request.files['file']
         encryption = request.form.get('encrypt')
         decryption = request.form.get('decrypt')
-        global todo
         if encryption != "":
+            global todo
             todo = 0
         else:
+            global todo
             todo = 1
         global f1
         f1 = request.form.get('f1')
@@ -50,7 +51,8 @@ def uploads_file():
 def get_fil():
     global secured_name
     received = UPLOAD_SHORT_DIR + secured_name
-    global f1, f2
+    global f1
+    global f2
     codeObject = Code(received, f1, f2)
     encrypted_name = "encrypted_" + secured_name
     decrypted_name = "decrypted_" + secured_name
