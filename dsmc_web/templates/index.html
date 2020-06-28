@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/dropzone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/dropzone.js"></script>
+    <script src="https://kit.fontawesome.com/867e431317.js" crossorigin="anonymous"></script>
+    <title>Hey ! Don't Steal My Code Guy !</title>
+</head>
+
+<body>
+
+<h1>< Don't steal <span class="red">my code /></span></h1>
+    <div class="info">
+        <span style="font-size: 3em; color: black;">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/atepir">Atepir</a>
+        </span>
+        <hr>
+        <span style="font-size: 3em; color: black">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/charles-nongma-sorgho-4700a41a1">Nongma Sorgho</a>
+        </span>
+        <hr>
+        <span style="font-size: 3em; color: black">
+            <i class="fas fa-at"></i>
+            <a href="sorghocharles8@gmail.com">sorghocharles8</a>
+        </span>
+        <hr>
+        <span style="font-size: 3em; color: black">
+            <i class="fab fa-discord"></i>
+            <a style="font-size: 45%" href="#discord">NongmaSorgho#1137</a>
+        </span>
+        <hr>
+        <span style="font-size: 0.75em; color: black">
+            <i class="far fa-copyright"></i>
+            Sorgho Nongma Charles Gérard
+        </span>
+        <hr>
+        <span style="font-size: 0.75em; color: black">
+            June 28, 2020 for the MacroHacks Hackathon.
+            This website is a part of a bigger and more complex entity of a python program, module, console and web application.
+            For more info, feel free to see the <a style="font-size: 100%" href="https://github.com/atepir">open source github repository</a>.
+        </span>
+    </div>
+    <form action="/uploader" method="POST"
+          enctype="multipart/form-data" class="dropzone">
+        <div class="fallback">
+            <input name="file" type="file"/>
+        </div>
+        <input type="text" name="f1" id="f1" value="" placeholder="1st factor" />
+        <input type="text" name="f2" id="f2" value="" placeholder="2nd factor" />
+        <input type="submit" value="Decrypt" name="decrypt" id="decrypt">
+        <input type="submit" value="Encrypt" name="encrypt" id="encrypt">
+    </form>
+    <nav class="info-banner">
+        <ul>
+            <li><a href="#"><i class="fab fa-discord"></i></a>
+            <li><a href="#"><i class="fas fa-at"></i></a>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a>
+            <li><a href="#"><i class="fab fa-github"></i></a>
+            <li><a id="copyright" style="font-size: 30%" href="#"><i class="far fa-copyright"></i>Sorgho Nongma</a></li>
+        </ul>
+    </nav>
+    <script>
+        Dropzone.prototype.defaultOptions.init = function () {
+
+            this.hiddenFileInput.removeAttribute('multiple');
+            this.on("maxfilesexceeded", function (file) {
+                this.removeAllFiles();
+                this.addFile(file);
+            });
+        };
+    </script>
+</body>
+</html>

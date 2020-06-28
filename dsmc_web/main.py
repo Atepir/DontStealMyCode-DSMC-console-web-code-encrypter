@@ -4,7 +4,7 @@ from os import system
 
 app = Flask(__name__)
 app.secret_key = b"macrohacks"
-UPLOAD_DIRECTORY = "dontstealmycode/dsmc_web/uploads/"
+UPLOAD_DIRECTORY = "dsmc_web/uploads/"
 UPLOAD_SHORT_DIR = "uploads/"
 
 @app.route('/')
@@ -21,10 +21,11 @@ def uploads_file():
         secured_name = secure_filename(name)
         final_name = UPLOAD_DIRECTORY + secured_name
         f.save(final_name)
-        return 'file uploaded successfully'
+        return '<a href="/get_file">Télécharger le fichier</a>'
 
 @app.route('/get_file')
 def get_fil():
     global secured_name
     to_send = UPLOAD_SHORT_DIR + secured_name
-    return send_file(to_send, as_attachment=True, attachment_filename=to_send)
+    fname = "encoded_" + secured_name
+    return send_file(to_send, as_attachment=True, attachment_filename=fname)
