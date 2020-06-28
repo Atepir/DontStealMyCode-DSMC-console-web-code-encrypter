@@ -28,7 +28,7 @@ def uploads_file():
         encryption = request.form.get('encrypt')
         decryption = request.form.get('decrypt')
         global todo
-        todo = 0 if encryption == "Decrypt" else 1
+        todo = 1 if encryption == "Encrypt" else 0
         global f1
         f1 = request.form.get('f1')
         global f2
