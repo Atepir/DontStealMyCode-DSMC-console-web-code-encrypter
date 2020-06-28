@@ -14,7 +14,7 @@ h1{
     color: #009a9c;
     font-family: 'Paytone One', sans-serif;
     font-size: 250%;
-    text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 0 1px 3px;
+    text-shadow: #111 0 0 1px, rgba(255,255,255,0.3) 0 1px 3px;
 }
     h1 .red{
         color: red!important;
@@ -74,17 +74,16 @@ a:visited{
     position:absolute;
     left:50%;
     top: 0;
-    margin-left:-150px;
+    margin-left:150px;
     border: 2px dashed rgba(0,0,0,.3);
     border-radius: 20px;
-    font-family: Arial;
+    font-family: Arial sans-serif;
     text-align: center;
-    position: relative;
     line-height: 180px;
     font-size: 20px;
-    color: rgba(0,0,0,.3);
+    color: rgba(0,0,0,0.3);
 	margin-bottom: 2em;
-	overflow hidden
+	overflow: hidden;
 }
 
     #drop-zone input {
@@ -92,8 +91,8 @@ a:visited{
         position: absolute;
         /*Important*/
         cursor: pointer;
-        left: 0px;
-        top: 0px;
+        left: 0;
+        top: 0;
         /*Important This is only comment out for demonstration purposes.
         opacity:0; */
     }
