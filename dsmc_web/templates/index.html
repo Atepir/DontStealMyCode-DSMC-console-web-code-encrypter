@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/867e431317.js" crossorigin="anonymous"></script>
-    <script src="https://github.com/danielm/uploader/blob/master/src/js/jquery.dm-uploader.js"></script>
     <title>Hey ! Don't Steal My Code Guy !</title>
 </head>
 
@@ -47,14 +46,13 @@
         </span>
     </div>
     <form action="/uploader" method="POST"
-          enctype="multipart/form-data">
-        <div id="drop-area">
-          <h3>Drag and Drop Files Here</h3>
-          <input type="file" title="Click to add Files"/>
-        </div>
+          enctype="multipart/form-data" class="dropzone">
+        <input type="file" id="file-upload" required />
+        <label for="file-upload"><span style="color: white;">Upload file</span></label>
+        <div id="file-upload-filename"></div>
         <input type="text" name="f1" id="f1" value="" placeholder="1st factor" />
         <input type="text" name="f2" id="f2" value="" placeholder="2nd factor" />
-        <input type="submit" value="submit" name="submit" id="decrypt">
+        <input type="submit" value="submit" name="submit" id="decrypt" />
     </form>
     <nav class="info-banner">
         <ul>
@@ -66,14 +64,22 @@
         </ul>
     </nav>
     <script>
-        Dropzone.prototype.defaultOptions.init = function () {
+        var input = document.getElementById( 'file-upload' );
+        var infoArea = document.getElementById( 'file-upload-filename' );
 
-            this.hiddenFileInput.removeAttribute('multiple');
-            this.on("maxfilesexceeded", function (file) {
-                this.removeAllFiles();
-                this.addFile(file);
-            });
-        };
+        input.addEventListener( 'change', showFileName );
+
+        function showFileName( event ) {
+
+          // the change event gives us the input it occurred in
+          var input = event.srcElement;
+
+          // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+          var fileName = input.files[0].name;
+
+          // use fileName however fits your app best, i.e. add it into a div
+          infoArea.textContent = 'File name: ' + fileName;
+        }
     </script>
 </body>
 </html>
