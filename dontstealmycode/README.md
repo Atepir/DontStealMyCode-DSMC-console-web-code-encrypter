@@ -33,11 +33,11 @@ python __init__.py -d 1 -c "path/then/name/to/the/output/encrypted/file/to/decry
 
 ##### c. For further details on the command line use of dsmc.py, please type
 ```shell script
-python dsmc.py --help
+python __init__.py --help
 ```
 or 
 ```shell script
-python dsmc.py -h
+python __init__.py -h
 ```
 ### 2. dsmc as a python module
 Please, see the example of use of dsmc as python module in the tests/ folder

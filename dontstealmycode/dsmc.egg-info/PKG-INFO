@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: dsmc
-Version: 0.0.3
+Version: 0.0.4
 Summary: [Dont Steal My Code : Console & web code encrypter & decrypter]
 Home-page: https://github.com/atepir/DontStealMyCode-DSMC-console-web-code-encrypter/tree/master/dontstealmycode
 Author: Nongma SORGHO
@@ -23,11 +23,11 @@ Description: # dsmc python module
         ##### a. Encrypting and decrypting the Haskell example
         Encrypting
         ```shell script
-        python __init__.py -e 1 -c "tests/Haskell/example.hs" --f1 "factor1" --f2 "factor2" -o "../tests/Haskell/example_encrypted.hs"
+        python __init__.py -e 1 -c "../tests/Haskell/example.hs" --f1 "factor1" --f2 "factor2" -o "../tests/Haskell/example_encrypted.hs"
         ```
         Decrypting
         ```shell script
-        python __init__.py -d 1 -c "tests/Haskell/example_encrypted.hs" --f1 "factor1" --f2 "factor2" -o "../tests/Haskell/example_decrypted.hs"
+        python __init__.py -d 1 -c "../tests/Haskell/example_encrypted.hs" --f1 "factor1" --f2 "factor2" -o "../tests/Haskell/example_decrypted.hs"
         ```
         ##### b. Encrypting and decrypting general model
         Encrypting
@@ -41,11 +41,11 @@ Description: # dsmc python module
         
         ##### c. For further details on the command line use of dsmc.py, please type
         ```shell script
-        python dsmc.py --help
+        python __init__.py --help
         ```
         or 
         ```shell script
-        python dsmc.py -h
+        python __init__.py -h
         ```
         ### 2. dsmc as a python module
         Please, see the example of use of dsmc as python module in the tests/ folder
