@@ -49,8 +49,13 @@
     <div id="loader"></div>
     <script>
         function init() {
-            document.getElementById('loader').style.display = 'block';
-            document.getElementById('download').style.display = 'none';
+            if(window.location.hash) {
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('download').style.display = 'block';
+            }else{
+                document.getElementById('loader').style.display = 'block';
+                document.getElementById('download').style.display = 'none';
+            }
         }
         function allow_download(){
             if(!window.location.hash) {
